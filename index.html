@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Validacion De Formularios</h1>
+
+    <div class="formulario">
+      <form novalidate>
+        <p>
+            <label for="name">
+              <span>Name:</span>
+              <input type="text" id="name" name="name" required minlength="4" />
+              <span class="error" aria-live="polite"></span>
+            </label>
+          </p> 
+            <br>
+          <p>
+            <label for="last-name">
+              <span>Apellidos:</span>
+              <input type="text" id="lastName" name="lastName" required minlength="4" />
+              <span class="error" aria-live="polite"></span>
+            </label>
+          </p> 
+            <br>
+        <p>
+          <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="text" id="mail" name="mail" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <br>
+        <label for="country">
+            <span>Pais:</span>
+            <input type="text" id="country" name="country" required minlength="3" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <br><br><br>
+          <label for="Zona-Postal">
+            <span>Code Postal:</span>
+            <input type="number" id="codPostal" name="codPostal" required minlength="2" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+           <br><br><br>
+        <label for="contraseña">
+            <span>Contraseña:</span>
+            <input type="password" id="contraseña" name="contraseña"  required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+            <br><br><br>
+          <label for="confirmPsw">
+            <span>Confirmar Contraseña</span>
+            <input type="password" id="confirmPsw" name="confirmPsw" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <br><br><br>
+       <div class="button"><button>Submit</button></div>
+      </form>
+
+    </div>
+
+
+    <script src="formulario.js"></script>
+
+</body>
+</html>
